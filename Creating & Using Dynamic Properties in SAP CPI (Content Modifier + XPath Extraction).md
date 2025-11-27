@@ -17,6 +17,7 @@ Use an XML field (e.g., Country name) from the incoming request and dynamically 
         <Name>India</Name>
     </Country>
 </CountriesData>
+```
 
 
 ## ✅ Step 1: Add a Content Modifier  
@@ -43,9 +44,11 @@ Use an XML field (e.g., Country name) from the incoming request and dynamically 
 
 When configuring the **Mail Adapter → Processing → Mail Body**, you can reference your property:
 
+```
 Hello Team,
 
 The country received from input is: ${property.Country}
 
 Regards,
 SAP CPI
+```
